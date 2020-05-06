@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A7FFEB"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/banana_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bananaaa"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true" />
+
+    <ImageView
+        android:id="@+id/butter_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/butter"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_toRightOf="@id/banana_image" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sugar"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_toRightOf="@id/butter_image"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BANANA BREAD"
+        android:layout_below="@+id/banana_image"
+        android:textSize="36sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#FF6D00"
+        android:layout_marginLeft="50dp" />
+
+    <TextView
+        android:id="@+id/first_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1 Preheat oven to 350 F."
+        android:layout_below="@id/header"
+        android:textColor="#2979FF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/second_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2 Cream together butter and sugar."
+        android:layout_below="@id/first_step"
+        android:textColor="#2979FF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/third_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3 Mix ripe bananas and eggs."
+        android:layout_below="@id/second_step"
+        android:textColor="#2979FF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/fourth_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4 Sift flour, baking soda, salt and add it to banana mixture."
+        android:layout_below="@id/third_step"
+        android:textColor="#2979FF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/fifth_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5 Add Vanilla extract, chocolate chips and mix well."
+        android:layout_below="@id/fourth_step"
+        android:textColor="#2979FF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/sixth_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6 Pour into loaf pan and bake for 1 hour."
+        android:layout_below="@id/fifth_step"
+        android:textColor="#2979FF"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/flour_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/flour"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_below="@id/sixth_step" />
+
+    <ImageView
+        android:id="@+id/chocolate_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chocolate"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_below="@id/sixth_step"
+        android:layout_toRightOf="@id/flour_image" />
+
+    <ImageView
+        android:id="@+id/bakingsoda_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bakingsoda"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_below="@id/sixth_step"
+        android:layout_toRightOf="@id/chocolate_image" />
+
+</RelativeLayout>
