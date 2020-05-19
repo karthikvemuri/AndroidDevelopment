@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/australiaaa"
+    tools:context=".secondQuestion">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/secondQuestionHeader_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:text="@string/secondQuestionHeader"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/secondQuestion_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secondQuestionHeader_id"
+            android:text="@string/secondQuestion"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/secondOptionsLayout_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secondQuestion_id"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/second_RadioButtonOne_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Zealand"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+
+            <RadioButton
+                android:id="@+id/second_RadioButtonTwo_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="England"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/second_RadioButtonThree_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="West Indies"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/second_RadioButtonFour_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="India"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/secondPageSubmit_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secondOptionsLayout_id"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="12dp"
+            android:onClick="secondSubmitAnswer"
+            android:text="@string/submit"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/scoreTextTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secondOptionsLayout_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="Score"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/scoreTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scoreTextTwo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/secondNextButton_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secondOptionsLayout_id"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:text="@string/next"
+            android:textAllCaps="true" />
+
+        <ImageView
+            android:id="@+id/secondPagePicture_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secondPageSubmit_id"
+            android:scaleType="fitCenter"
+            android:src="@drawable/secondpagepicture"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

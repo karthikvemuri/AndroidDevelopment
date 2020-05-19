@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/firstpageindia"
+    tools:context=".fourthQuestion">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/fourthQuestionHeader_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:text="@string/fourthQuestionHeader"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/fourthQuestion_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fourthQuestionHeader_id"
+            android:text="@string/fourthQuestion"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/fourthOptionsLayout_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fourthQuestion_id"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/fourth_CheckBoxOne_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yuvraj Singh"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+
+            <CheckBox
+                android:id="@+id/fourth_CheckBoxTwo_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M.S.Dhoni"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <CheckBox
+                android:id="@+id/fourth_CheckBoxThree_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sachin Tendulkar"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <CheckBox
+                android:id="@+id/fourth_CheckBoxFour_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Virat Kohli"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/fourthPageSubmit_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fourthOptionsLayout_id"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="12dp"
+            android:onClick="fourthSubmitAnswer"
+            android:text="@string/submit"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/scoreTextFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fourthOptionsLayout_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="Score"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/scoreFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scoreTextFour"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/fourthNextButton_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fourthOptionsLayout_id"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:text="@string/next"
+            android:textAllCaps="true" />
+
+        <ImageView
+            android:id="@+id/fourthPagePicture_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fourthPageSubmit_id"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fourthpagepicture"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+
+</ScrollView>

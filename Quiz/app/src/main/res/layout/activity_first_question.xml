@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/firstpageindia"
+    tools:context=".firstQuestion">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/firstQuestionHeader_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:text="@string/firstQuestionHeader"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/firstQuestion_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstQuestionHeader_id"
+            android:text="@string/firstQuestion"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/optionsLayout_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstQuestion_id"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBoxOne_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sachin Tendulkar"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <CheckBox
+                android:id="@+id/checkBoxTwo_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Virat Kohli"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <CheckBox
+                android:id="@+id/checkBoxThree_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M.S.Dhoni"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <CheckBox
+                android:id="@+id/checkBoxFour_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sourav Ganguly"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/firstPageSubmit_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/optionsLayout_id"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="12dp"
+            android:onClick="submitAnswer"
+            android:text="@string/submit"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/optionsLayout_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="Score"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/scoreOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scoreText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/firstNextButton_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/optionsLayout_id"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:text="@string/next"
+            android:textAllCaps="true" />
+
+        <ImageView
+            android:id="@+id/firstPagePicture_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstPageSubmit_id"
+            android:scaleType="fitCenter"
+            android:src="@drawable/firstpagepicture"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
+

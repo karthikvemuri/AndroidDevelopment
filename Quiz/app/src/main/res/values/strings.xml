@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="start">Start</string>
+    <string name="header">Cricket check</string>
+    <string name="tagLine">A small Cricket trivia Quiz?</string>
+    <string name="userNameInput">Name of this cricket genius?</string>
+    <string name="firstQuestionHeader">Question: 1/5</string>
+    <string name="firstQuestion">Which of these Indian Batsmen have a highest score of 183?</string>
+    <string name="next">next</string>
+    <string name="submit">submit</string>
+    <string name="secondQuestionHeader">Question: 2/5</string>
+    <string name="secondQuestion">Against which country did Glenn McGrath achieve his first ever Hat-trick?</string>
+    <string name="thirdQuestionHeader">Question: 3/5</string>
+    <string name="thirdQuestion">Which ground is called the Mecca of Cricket?</string>
+    <string name="fourthQuestionHeader">Question: 4/5</string>
+    <string name="fourthQuestion">Which of these Indians were given the man of the tournament award in World Cups?</string>
+    <string name="fifthQuestionHeader">Question: 5/5</string>
+    <string name="fifthQuestion">What is the most famous Nickname of Rahul Dravid?</string>
+    <string name="byeMessage">Thank you for trying the demo of my app. I will be back with more fun questions real soon.</string>
+</resources>
